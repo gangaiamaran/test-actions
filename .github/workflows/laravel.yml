@@ -20,7 +20,7 @@ jobs:
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Delete lock files
       run: |
-        rm composer.json
+        rm composer.lock
     - name: Install Dependencies
       run: composer install
     - name: Generate key
